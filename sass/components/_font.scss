@@ -1,0 +1,249 @@
+    nav {
+        p {
+            font-family: $dosis;
+            font-size: $text40;
+            font-weight: bold;
+            color: $grey;
+            margin-top: 3.5%;
+            margin-left: 1%;
+        }
+    }
+    
+    .firstContainer {
+        div:nth-child(2) {
+            margin-top: 12%;
+            p:first-child {
+                display: flex;
+                font-size: $h1;
+                color: $grey;
+                font-family: $poppins;
+                margin-bottom: -2%;
+            }
+            p:nth-child(2) {
+                font-size: 76px;
+                color: $grey;
+                font-weight: bold;
+                font-family: $poppins;
+            }
+            p:nth-child(3) {
+                font-size: $text16;
+                color: $lightGrey;
+                font-family: $poppins;
+                font-weight: 400;
+                width: 35%;
+            }
+            button {
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    .firstSection {
+        div:nth-child(2) {
+            p:first-child {
+                font-size: $text20;
+                color: $bgpurple;
+                font-family: $lobster;
+            }
+            p:nth-child(2) {
+                font-size: $h1;
+                font-family: $poppins;
+                font-weight: $semiBold;
+                color: $deepGrey;
+            }
+            p:nth-child(3) {
+                font-size: $text16;
+                font-family: $poppins;
+                color: $lightGrey;
+            }
+            p:nth-child(5) {
+                font-size: $text16;
+                font-family: $poppins;
+                color: $lightGrey;
+            }
+        }
+    }
+    
+    .secondSection {
+        .secondContainer {
+            div:nth-child(1) {
+                p:nth-child(1) {
+                    margin-left: 10%;
+                    font-size: $text25;
+                    font-family: $lato;
+                    color: $bgpurple;
+                }
+                p:nth-child(2) {
+                    margin-left: 10%;
+                    font-size: $h1;
+                    font-family: $poppins;
+                    color: $deepGrey;
+                    font-weight: $semiBold;
+                }
+            }
+            div:not(:first-child) {
+                p:nth-child(2) {
+                    font-size: $text18;
+                    font-family: $poppins;
+                    color: $deepGrey;
+                    font-weight: 600;
+                    margin-top: 15%;
+                }
+                p:nth-child(3) {
+                    font-size: $text15;
+                    font-family: $lato;
+                    color: $deepGrey;
+                    margin-top: 10%;
+                }
+            }
+        }
+    }
+    
+    .thirdSection {
+        div:nth-child(1) {
+            p:first-child {
+                font-size: $text20;
+                font-family: $lobster;
+                color: $bgpurple;
+                width: 60px;
+                display: block;
+                margin: auto;
+            }
+            p:nth-child(2) {
+                font-size: $h1;
+                font-family: $poppins;
+                color: $deepGrey;
+                width: 280px;
+                display: block;
+                margin: auto;
+            }
+        }
+        .package {
+            div {
+                p:nth-child(1) {
+                    font-size: $text28;
+                    font-family: $lobster;
+                    color: $deepGrey;
+                    width: 230px;
+                    text-align: center;
+                }
+                p:nth-child(2) {
+                    font-size: $text16;
+                    font-family: $poppins;
+                    color: $deepGrey;
+                    width: 300px;
+                    text-align: center;
+                    margin-top: 15%;
+                }
+                p:nth-child(3) {
+                    font-size: $text30;
+                    font-family: $poppins;
+                    color: $priceColor;
+                    text-align: center;
+                    margin-top: 15%;
+                    font-weight: $semiBold;
+                }
+            }
+            div:not(:nth-child(2)) {
+                button:nth-child(4) {
+                    font-family: $poppins;
+                    font-size: $text16;
+                    a {
+                        text-decoration: none;
+                        color: $deepGrey;
+                    }
+                }
+            }
+            div:nth-child(2) {
+                button:nth-child(4) {
+                    font-family: $poppins;
+                    font-size: $text16;
+                    color: $white;
+                }
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    footer {
+        .footer_position {
+            div:first-child {
+                text-align: center;
+                p:first-child {
+                    font-size: $h1;
+                    font-family: $dosis;
+                    color: $white;
+                }
+                p:nth-child(2) {
+                    font-family: $dosis;
+                    font-size: $text31;
+                    color: $white;
+                }
+            }
+            div {
+                p:first-child {
+                    font-family: $poppins;
+                    font-size: $text20;
+                    color: $white;
+                    margin-bottom: 10%;
+                }
+                ul {
+                    list-style-type: none;
+                    li {
+                        padding-bottom: 5%;
+                        color: $white;
+                        font-family: $poppins;
+                    }
+                }
+            }
+            div:last-child {
+                p {
+                    color: $white;
+                    font-family: $poppins;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 376px) {
+        .firstContainer {
+            div:nth-child(2) {
+                p:first-child {
+                    font-size: $h1/1.7;
+                }
+                p:nth-child(2) {
+                    font-size: $h1/1.3;
+                }
+                p:nth-child(3) {
+                    font-size: $text16/1.5;
+                }
+            }
+        }
+        .firstSection {
+            div:nth-child(2) {
+                p:nth-child(2) {
+                    font-size: $h1/1.5;
+                }
+            }
+        }
+        .secondSection {
+            .secondContainer {
+                div:nth-child(1) {
+                    p:nth-child(2) {
+                        font-size: $h1/1.5;
+                    }
+                }
+                div:not(:first-child) {
+                    p:nth-child(2) {
+                        font-size: $text18;
+                    }
+                }
+            }
+        }
+    }

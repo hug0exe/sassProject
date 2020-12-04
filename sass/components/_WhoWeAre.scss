@@ -1,0 +1,36 @@
+.firstSection {
+    height: 750px;
+    margin-top: 5%;
+    div:nth-child(2) {
+        background-image: url(../../img/background-we-are.png);
+        width: 40%;
+        position: absolute;
+        right: 10%;
+        top: 120%;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .firstSection {
+        img {
+            display: none;
+        }
+        div:nth-child(2) {
+            top: 73%;
+            left: 17%;
+            width: 500px;
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .firstSection {
+        div {
+            margin-top: 10%;
+            width: 250px;
+        }
+        div:nth-child(2) {
+            width: 250px;
+        }
+    }
+}

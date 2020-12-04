@@ -1,0 +1,113 @@
+   .firstContainer {
+       width: 1420px;
+       display: block;
+       margin: auto;
+       header {
+           padding-top: 3%;
+           position: relative;
+           .background_header {
+               background-image: url(../../img/wave.svg);
+               background-size: cover;
+               width: 872.5px;
+               height: 700px;
+               position: absolute;
+               top: -5%;
+               right: -17%;
+               z-index: 0;
+           }
+       }
+       nav {
+           display: flex;
+           ul {
+               display: flex;
+               flex-flow: row;
+               list-style-type: none;
+               position: absolute;
+               top: 3%;
+               right: 15%;
+               z-index: 1;
+               padding-top: 3%;
+               li {
+                   color: $white;
+                   font-family: $poppins;
+                   padding: 6%;
+               }
+           }
+       }
+       .telephone {
+           position: absolute;
+           top: 20%;
+           right: 13%;
+           float: right;
+           z-index: 1;
+       }
+   }
+   
+   .socialList {
+       width: 10px;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 50%;
+       left: 5%;
+       img {
+           padding-top: 47px;
+       }
+       hr {
+           margin-top: 100%;
+           padding-top: 47px;
+           background-color: $hrColor;
+           border: none;
+       }
+   }
+   
+   @media screen and (max-width: 768px) {
+       .firstContainer {
+           width: 100%;
+           header {
+               .background_header {
+                   display: none;
+               }
+               nav {
+                   margin-left: 20%;
+                   ul {
+                       left: 4%;
+                       top: 70%;
+                       li {
+                           color: $bgpurple;
+                       }
+                   }
+               }
+           }
+           div:nth-child(2) {
+               margin-left: 10%;
+           }
+           .socialList {
+               top: 25%
+           }
+       }
+   }
+   
+   @media screen and(max-width:375px) {
+       .firstContainer {
+           header {
+               nav {
+                   margin-left: 7%;
+                   p {
+                       margin-top: 15%;
+                   }
+                   ul {
+                       top: 90%;
+                       li {
+                           padding-left: 0;
+                           padding-right: 10%;
+                       }
+                   }
+               }
+           }
+           div:nth-child(2) {
+               margin-left: 20%;
+               padding-top: 20%;
+           }
+       }
+   }

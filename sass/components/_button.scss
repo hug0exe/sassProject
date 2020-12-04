@@ -1,0 +1,116 @@
+.firstContainer {
+    div:nth-child(2) {
+        button {
+            margin: 21px 0 65px 0;
+            padding: $firstBtnPadding;
+            border-radius: $btnRadius;
+            background-image: $btncolor;
+            font-family: $poppins;
+            font-size: $text16;
+            color: $white;
+        }
+    }
+    button:last-child {
+        background-image: url(../../picto/mouse.svg);
+        padding: $mousePadding;
+        background-repeat: no-repeat;
+        border-radius: $btnRadius;
+        display: block;
+        margin: auto;
+        background-color: $white;
+        background-position: center;
+        box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+        margin-top: 13%;
+        border: none;
+    }
+}
+
+.firstSection {
+    div:nth-child(2) {
+        div {
+            button {
+                margin: 21px 0 65px 0;
+                padding: $firstBtnPadding;
+                border-radius: $btnRadius;
+                background-image: $btncolor;
+                font-family: $poppins;
+                font-size: $text12;
+                color: $white;
+                border: none;
+            }
+        }
+    }
+}
+
+.secondSection {
+    .secondContainer {
+        button {
+            margin: 61px 0 0px 0;
+            padding: $firstBtnPadding;
+            border-radius: $btnRadius;
+            background-image: $btncolor;
+            font-family: $poppins;
+            font-size: $text12;
+            color: $white;
+            border: none;
+            float: right;
+            position: relative;
+        }
+    }
+}
+
+.thirdSection {
+    .package {
+        div:not(:nth-child(2)) {
+            button:nth-child(4) {
+                margin: 21px 0 65px 0;
+                padding: $firstBtnPadding;
+                border-radius: $btnRadius;
+                background-color: white;
+                border: solid 1px $priceColor;
+                display: block;
+                margin: auto;
+                margin-top: 15%;
+            }
+        }
+        div:nth-child(2) {
+            button:nth-child(4) {
+                margin: 21px 0 65px 0;
+                padding: $firstBtnPadding;
+                border-radius: $btnRadius;
+                background-image: $btncolor;
+                border: solid 1px $priceColor;
+                display: block;
+                margin: auto;
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+.newsletter {
+    div:first-child {
+        div {
+            button {
+                margin: 21px 0 65px 0;
+                padding: $firstBtnPadding;
+                border-radius: $btnRadius;
+                background-image: $btncolor;
+                font-family: $poppins;
+                font-size: $text12;
+                color: $white;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 376px) {
+    .firstContainer {
+        div:nth-child(2) {
+            button {
+                font-size: $text16/1.5;
+            }
+        }
+    }
+}

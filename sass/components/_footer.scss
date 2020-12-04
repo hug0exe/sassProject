@@ -1,0 +1,21 @@
+footer {
+    background-image: url(../../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footer_position {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 17%;
+        padding-bottom: 4%;
+    }
+}
+
+@media screen and(max-width:768px) {
+    footer {
+        .footer_position {
+            div:not(:first-child) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.newsletter {
+    height: 300px;
+    div:nth-child(1) {
+        margin-top: 8%;
+        p:nth-child(1) {
+            font-size: $text20;
+            font-family: $lobster;
+            text-align: center;
+            color: $bgpurple;
+        }
+        p:nth-child(2) {
+            margin-top: 1%;
+            text-align: center;
+            font-size: $text32;
+            font-family: $poppins;
+            color: $grey;
+        }
+        div {
+            margin-top: 3%;
+            margin-left: 30%;
+            input {
+                border: none;
+                background-color: $inputcolor;
+                padding: $inputPadding;
+                font-family: $poppins;
+                font-size: $text12;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .newsletter {
+        div:nth-child(1) {
+            div {
+                margin-left: 13%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .newsletter {
+        div:nth-child(1) {
+            div {
+                input {
+                    padding: 9px 52px 8px 15px;
+                }
+            }
+        }
+    }
+}

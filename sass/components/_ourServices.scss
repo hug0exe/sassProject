@@ -1,0 +1,48 @@
+.secondSection {
+    .secondContainer {
+        width: 100%;
+        .services {
+            background-image: url(../../img/background-service.png);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 5%;
+            div {
+                width: calc(100%/3 - 133px);
+                margin-bottom: 5%;
+                padding: $boxPadding;
+                border-radius: 36px;
+                box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+                background-color: #ffffff;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .secondSection {
+        .secondContainer {
+            .services {
+                div {
+                    width: calc(100%/2 - 50px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .secondSection {
+        .secondContainer {
+            .services {
+                div {
+                    width: calc(100%/1 - 50px);
+                }
+            }
+        }
+    }
+}
